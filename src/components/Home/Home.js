@@ -34,18 +34,18 @@ const Home = () => {
             </div>
             <div>
                 <p className='text-center text-3xl font-sans font-bold text-cyan-600 pb-7'>Customer Reviews</p>
-                <div className='grid grid-cols-1 md:grid-cols-2 pb-10 font-serif lg:grid-cols-2 gap-5 justify-items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-3 pb-10 font-serif lg:grid-cols-3 gap-5 justify-items-center'>
                     {
                         reviews.slice(0, 3).map(review => (<ReviewCart key={review.sell} review={review}></ReviewCart>))
                     }
                 </div>
             </div>
             <div className='text-center pt-35'>
-                <Link to='/reviews' className='py-2 px-3 text-white mt-15 rounded-full bg-cyan-600'>See All Reviews</Link>
+                <Link to='/reviews' className='mb-2 py-2 px-3 rounded-lg text-white mt-3 bg-cyan-600 sm:w-auto sm:mb-0'>See All Reviews</Link>
             </div>
 
 
-        </section>
+        </section >
     );
 };
 
