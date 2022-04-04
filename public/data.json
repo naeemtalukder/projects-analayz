@@ -1,37 +1,55 @@
 [
     {
+        "name": "Rahimuddin Mollah",
         "month": "Mar",
+        "reviews": "I am giving this camera 5 stars because in the very short time that I have had it, it has done everything that I expected of it. However, and having the camera do what you want it to do requires attention to set up.",
         "investment": 100000,
+        "ratting": "5 out of 5",
         "sell": 241,
         "revenue": 10401
     },
     {
+        "name": "Karim Khan",
         "month": "Apr",
+        "reviews": "Canons until I got the 5Ds that I can I wished it was better on the iso. I bought a Sony camera and I sold a lot of cameras from canon but I had money to go for the EOS R5!",
         "investment": 200000,
+        "ratting": "4.5 out of 5",
         "sell": 423,
         "revenue": 24500
     },
     {
+        "name": "Kalam Gazi",
         "month": "May",
+        "reviews": "The Canon R5 is my dream camera. It combines everything I love about the Canon EOS 5D Mark IV and the Canon EOS R into a single, fabulous camera.Beautiful color, amazing deal, face, and eye tracking — all of these tools help me to produce striking imagery without having to fixate on my gear.",
         "investment": 500000,
+        "ratting": "4.7 out of 5",
         "sell": 726,
         "revenue": 67010
     },
     {
+        "name": "Abdurs Salam",
         "month": "Jun",
+        "reviews": "I am giving this camera 5 stars because in the very short time that I have had it, because the options in the set up are seemingly endless, and having the camera do what you want it to do requires attention to set up.",
         "investment": 500000,
+        "ratting": "4.9 out of 5",
         "sell": 529,
         "revenue": 40405
     },
     {
+        "name": "Rafiquddin Rafiq ",
         "month": "Jul",
+        "reviews": "Canons until I got the 5Ds that I can I wished it was better on the iso. I bought a Sony camera and I sold a lot of cameras from canon but I kept the 70-200 is II. I was about tho begin buying glass for the Sony until ,I had money to go for the EOS R5!",
         "investment": 600000,
+        "ratting": "3.5 out of 5",
         "sell": 601,
         "revenue": 50900
     },
     {
+        "name": "Abul Kalam Azad",
         "month": "Aug",
+        "reviews": "I love this camera. Mirrorless is they way to go. The viewfinder is terrific. The files are very larger but so is the ability to crop dramatically and still get a great image. I've been using it for about 6 months with no problems. I don't shoot a lot of video, some up to 15 minutes",
         "investment": 700000,
+        "ratting": "5 out of 5",
         "sell": 670,
         "revenue": 61000
     }
