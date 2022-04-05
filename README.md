@@ -1,6 +1,6 @@
 # Welcome to my Laptop Zone BD
 
-This project was bootstrapped with [Create React App].
+Live Site Link: [https://genuine-fenglisu-84ac5e.netlify.app/].
 
 ## Projects discription 
 
