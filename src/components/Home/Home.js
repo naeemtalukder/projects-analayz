@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useReview from '../../Hoock/useReviews';
 import ReviewCart from '../ReviewCart/ReviewCart';
 
 const Home = () => {
-    const [reviews, setReviews] = useState([]);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [])
+    const [reviews, setReviews] = useReview();
+
     return (
         <section className='px-4 py-5 mx-auto max-w-7xl'>
             <div className='grid items-center pb-10 w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-22'>

@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useReview from '../../Hoock/useReviews';
 import ReviewCart from '../ReviewCart/ReviewCart';
 
 const Reviews = () => {
-    const [reviews, setReviews] = useState([]);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [])
+    const [reviews, setReviews] = useReview()
+
     return (
         <div className='px-5 pt-5 pb-24 mx-auto mx-w-7xl md:px-2'>
             <p className='text-center text-3xl font-sans font-bold text-cyan-600 pb-3'>Customer Reviews</p>
