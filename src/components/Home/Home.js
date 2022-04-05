@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Reviews from '../Reviews/Reviews';
+import ReviewCart from '../ReviewCart/ReviewCart';
 
 const Home = () => {
+    const [reviews, setReviews] = useState([]);
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setReviews(data))
+    }, [])
     return (
         <section className='px-4 py-5 mx-auto max-w-7xl'>
-            <div className='grid items-center pb-24 w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-22'>
+            <div className='grid items-center pb-10 w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-22'>
                 <div>
                     <h1 className='mb-4 text-1xl font-extrabold leading-tight tracking-tight text-left text-gray-700 md:text-4xl'>
                         Your Next Laptop. <br />
@@ -29,9 +35,16 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Reviews></Reviews>
+            <div>
+                <p className='text-center text-3xl font-sans font-bold text-cyan-600 pb-7'>Customer Reviews</p>
+                <div className='grid grid-cols-1 md:grid-cols-2 pb-10 font-serif lg:grid-cols-2 gap-5 justify-items-center'>
+                    {
+                        reviews.slice(0, 3).map(review => (<ReviewCart key={review.sell} review={review}></ReviewCart>))
+                    }
+                </div>
+            </div>
             <div className='text-center pt-35'>
-                <Link to='/reviews' className='py-2 px-3 text-white mt-5 rounded-full bg-cyan-600'>See All Reviews</Link>
+                <Link to='/reviews' className='py-2 px-3 text-white mt-15 rounded-full bg-cyan-600'>See All Reviews</Link>
             </div>
 
 
